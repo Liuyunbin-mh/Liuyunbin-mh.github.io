@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于我 | 我的博客</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">我的博客</a>
+      <nav class="nav">
+        <a href="index.html">首页</a>
+        <a href="about.html" class="active">关于我</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="page-section">
+      <div class="container">
+        <h1>关于我</h1>
+        <p>
+          这里写你的个人介绍，比如：
+        </p>
+        <ul>
+          <li>你是谁 / 做什么工作或在读什么专业</li>
+          <li>你对哪些技术、方向感兴趣</li>
+          <li>你为什么想写博客、希望通过博客达成什么</li>
+        </ul>
+        <p>
+          你可以自由修改本页面的内容与结构，让它更符合你的风格。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> 我的博客 · 由静态页面驱动</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
