@@ -3,59 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>First Post: Hello World | My Blog</title>
+  <title>First Post: Hello World | Your Name</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="../index.html">My Blog</a>
-      <nav class="nav">
-        <a href="../index.html">Home</a>
-        <a href="../about.html">About</a>
-      </nav>
-    </div>
-  </header>
+  <main class="post-page">
+    <header class="post-header">
+      <a href="../index.html" class="post-back">← Back to Home</a>
+      <h1>First Post: Hello World</h1>
+      <p class="post-meta">Published on Mar 17, 2026 · 3 min read</p>
+    </header>
 
-  <main class="site-main">
-    <article class="post-detail">
-      <div class="container">
-        <h1>First Post: Hello World</h1>
-        <p class="post-meta">Published on Mar 17, 2026 · Category: Thoughts</p>
+    <article class="post-content">
+      <p>
+        Welcome to my blog! This is my first post, and I'm excited to share my thoughts 
+        and experiences with you. This space will be dedicated to documenting my journey 
+        in software engineering, sharing tutorials, and reflecting on lessons learned.
+      </p>
 
-        <p>
-          Welcome to my blog! This is a sample post to demonstrate the layout of a single article page.
-        </p>
+      <p>
+        I believe in learning in public. Writing helps me clarify my thinking, and 
+        sharing what I learn might help someone else facing similar challenges.
+      </p>
 
-        <p>
-          Next steps you can take:
-        </p>
-        <ul>
-          <li>Replace this content with your own writing;</li>
-          <li>Duplicate this file, rename it, and quickly create new posts;</li>
-          <li>Add links to new posts in <code>index.html</code>.</li>
-        </ul>
+      <h2>What to Expect</h2>
+      <p>
+        In this blog, you can expect posts about:
+      </p>
+      <ul>
+        <li>Technical tutorials and how-to guides</li>
+        <li>Project retrospectives and lessons learned</li>
+        <li>Thoughts on software engineering best practices</li>
+        <li>Book reviews and learning resources</li>
+      </ul>
 
-        <p>
-          You may write in Markdown and convert to HTML using tools, or integrate a static site generator 
-          (like Hugo or Hexo) in the future. But for now, this pure HTML template is enough to start 
-          documenting your thoughts.
-        </p>
+      <h2>Getting Started</h2>
+      <p>
+        This website is built with pure HTML and CSS — no frameworks, no build tools, 
+        just simple, clean code. It's a reminder that sometimes the simplest solution 
+        is the best one.
+      </p>
 
-        <a class="back-link" href="../index.html">← Back to Home</a>
-      </div>
+      <p>
+        If you'd like to create your own site like this, feel free to duplicate this 
+        template and make it your own. The source code is available on my GitHub.
+      </p>
+
+      <p>
+        Thanks for stopping by. Stay tuned for more posts!
+      </p>
     </article>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> My Blog · Powered by Static Pages</p>
-    </div>
-  </footer>
+    <footer class="main-footer">
+      <p>© <span id="year"></span> Your Name · <a href="../index.html">Back to Home</a></p>
+    </footer>
+  </main>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
-

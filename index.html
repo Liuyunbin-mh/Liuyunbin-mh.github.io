@@ -3,94 +3,259 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Blog | Home</title>
+  <title>Your Name | Personal Blog & Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html">My Blog</a>
-      <nav class="nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="site-main">
-    <div class="container">
-      <div class="layout-sidebar">
-        <!-- Sidebar: Profile -->
-        <aside class="sidebar">
-          <div class="sidebar-profile">
-            <div class="sidebar-avatar">
-              <img src="assets/images/avatar.jpg" alt="Profile Photo" />
-            </div>
-            <h2 class="sidebar-name">Your Name</h2>
-            <p class="sidebar-title">Software Engineer</p>
-            <p class="sidebar-bio">
-              A brief introduction about yourself and what you're passionate about.
-            </p>
-            <div class="sidebar-links">
-              <a href="mailto:your.email@example.com" class="sidebar-link">
-                <span class="icon">✉</span> Email
-              </a>
-              <a href="https://github.com/Liuyunbin-mh" target="_blank" class="sidebar-link">
-                <span class="icon">⌂</span> GitHub
-              </a>
-            </div>
-            <a href="about.html" class="sidebar-more">View Full Profile →</a>
-          </div>
-        </aside>
-
-        <!-- Main Content: Posts -->
-        <div class="main-content">
-          <section class="hero-inline">
-            <h1>Welcome</h1>
-            <p>A place where I share my thoughts, learning, and projects.</p>
-          </section>
-
-          <section class="post-list-section">
-            <h2>Latest Posts</h2>
-            <div class="post-list">
-              <article class="post-card">
-                <a href="posts/hello-world.html">
-                  <h3>First Post: Hello World</h3>
-                </a>
-                <p class="post-meta">Published on Mar 17, 2026</p>
-                <p class="post-excerpt">
-                  This is a sample post to demonstrate the basic layout structure of the blog. 
-                  Feel free to modify and create your own content based on this template.
-                </p>
-                <a class="read-more" href="posts/hello-world.html">Read More</a>
-              </article>
-
-              <article class="post-card">
-                <a href="#">
-                  <h3>Another Post Example</h3>
-                </a>
-                <p class="post-meta">Published on Mar 15, 2026</p>
-                <p class="post-excerpt">
-                  You can add more posts here. Just duplicate the post-card structure 
-                  and update the content and links.
-                </p>
-                <a class="read-more" href="#">Read More</a>
-              </article>
-            </div>
-          </section>
+  <div class="page-wrapper">
+    <!-- Fixed Sidebar -->
+    <aside class="sidebar-fixed">
+      <div class="sidebar-inner">
+        <div class="sidebar-avatar">
+          <img src="assets/images/avatar.jpg" alt="Profile Photo" />
         </div>
-      </div>
-    </div>
-  </main>
+        <h1 class="sidebar-name">Your Name</h1>
+        <p class="sidebar-title">Software Engineer</p>
+        
+        <nav class="sidebar-nav">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#publications">Publications</a>
+          <a href="#skills">Skills</a>
+          <a href="#blog">Blog</a>
+        </nav>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> My Blog · Powered by Static Pages</p>
-    </div>
-  </footer>
+        <div class="sidebar-contact">
+          <a href="mailto:your.email@example.com" class="contact-link">
+            <span class="icon">✉</span> your.email@example.com
+          </a>
+          <a href="https://github.com/Liuyunbin-mh" target="_blank" class="contact-link">
+            <span class="icon">⌂</span> GitHub
+          </a>
+          <a href="https://linkedin.com/in/yourname" target="_blank" class="contact-link">
+            <span class="icon">◆</span> LinkedIn
+          </a>
+        </div>
+
+        <p class="sidebar-quote">"Code is poetry."</p>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-scroll">
+      <!-- About Section -->
+      <section id="about" class="content-section">
+        <h2 class="section-heading">About Me</h2>
+        <div class="about-content">
+          <p class="lead">
+            Hello! I'm a passionate software engineer with a love for building elegant solutions 
+            to complex problems. Welcome to my corner of the internet.
+          </p>
+          <p>
+            I specialize in machine learning, web development, and distributed systems. 
+            When I'm not coding, you can find me reading, hiking, or exploring new technologies.
+          </p>
+          <p>
+            This blog is where I share my thoughts on technology, document my learning journey, 
+            and showcase projects I've been working on.
+          </p>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="content-section">
+        <h2 class="section-heading">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2020 - 2024</span>
+              <h3>Ph.D. in Computer Science</h3>
+              <p class="institution">University Name, City, Country</p>
+              <p>Research focus: Machine Learning, Natural Language Processing</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2016 - 2020</span>
+              <h3>B.S. in Computer Science</h3>
+              <p class="institution">University Name, City, Country</p>
+              <p>GPA: 3.9/4.0 · Honors: Dean's List, Outstanding Graduate</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="content-section">
+        <h2 class="section-heading">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2024 - Present</span>
+              <h3>Software Engineer</h3>
+              <p class="institution">Company Name, City</p>
+              <ul>
+                <li>Developed and maintained scalable backend services using Go and Python</li>
+                <li>Led a team of 3 engineers on a key product feature</li>
+                <li>Improved system performance by 40% through optimization</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2022 - 2024</span>
+              <h3>Research Intern</h3>
+              <p class="institution">Research Lab / Company Name</p>
+              <ul>
+                <li>Conducted research on deep learning models for NLP</li>
+                <li>Published 2 papers at top-tier conferences</li>
+                <li>Built prototype systems for production deployment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Publications Section -->
+      <section id="publications" class="content-section">
+        <h2 class="section-heading">Publications</h2>
+        <div class="pub-list">
+          <article class="pub-item">
+            <h3>Paper Title: A Novel Approach to Something Important</h3>
+            <p class="pub-authors"><strong>Your Name</strong>, Co-Author One, Co-Author Two</p>
+            <p class="pub-venue">Conference/Journal Name, 2024</p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">PDF</a>
+              <a href="#" class="pub-link">Code</a>
+              <a href="#" class="pub-link">BibTeX</a>
+            </div>
+          </article>
+          <article class="pub-item">
+            <h3>Another Paper Title: Exploring New Methods in AI</h3>
+            <p class="pub-authors"><strong>Your Name</strong>, Co-Author Three</p>
+            <p class="pub-venue">Conference/Journal Name, 2023</p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">PDF</a>
+              <a href="#" class="pub-link">Code</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="content-section">
+        <h2 class="section-heading">Skills</h2>
+        <div class="skills-container">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Go</span>
+              <span class="tag">C++</span>
+              <span class="tag">Java</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Frameworks & Tools</h3>
+            <div class="skill-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Kubernetes</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Databases & Cloud</h3>
+            <div class="skill-tags">
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Redis</span>
+              <span class="tag">AWS</span>
+              <span class="tag">GCP</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section id="blog" class="content-section">
+        <h2 class="section-heading">Blog</h2>
+        <p class="section-intro">Thoughts, tutorials, and things I've learned along the way.</p>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <div class="blog-card-inner">
+              <span class="blog-date">Mar 17, 2026</span>
+              <h3><a href="posts/hello-world.html">First Post: Hello World</a></h3>
+              <p>This is a sample post to demonstrate the basic layout structure of the blog. Feel free to modify and create your own content.</p>
+              <a href="posts/hello-world.html" class="blog-read">Read more →</a>
+            </div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-card-inner">
+              <span class="blog-date">Mar 15, 2026</span>
+              <h3><a href="#">Building My Personal Website</a></h3>
+              <p>A behind-the-scenes look at how I built this site from scratch using pure HTML and CSS.</p>
+              <a href="#" class="blog-read">Read more →</a>
+            </div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-card-inner">
+              <span class="blog-date">Mar 10, 2026</span>
+              <h3><a href="#">Learning in Public</a></h3>
+              <p>Why I decided to document my learning journey and share it with the world.</p>
+              <a href="#" class="blog-read">Read more →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="main-footer">
+        <p>© <span id="year"></span> Your Name · Built with ❤ and pure HTML/CSS</p>
+      </footer>
+    </main>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Smooth scroll for navigation
+    document.querySelectorAll('.sidebar-nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Highlight active section in navigation
+    const sections = document.querySelectorAll('.content-section');
+    const navLinks = document.querySelectorAll('.sidebar-nav a');
+    
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (window.scrollY >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
   </script>
 </body>
 </html>
