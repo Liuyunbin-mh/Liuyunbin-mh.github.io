@@ -1,44 +1,190 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>关于我 | 我的博客</title>
+  <title>About Me | My Blog</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.html">我的博客</a>
+      <a class="logo" href="index.html">My Blog</a>
       <nav class="nav">
-        <a href="index.html">首页</a>
-        <a href="about.html" class="active">关于我</a>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
       </nav>
     </div>
   </header>
 
   <main class="site-main">
-    <section class="page-section">
+    <!-- Profile Section -->
+    <section class="profile-section">
       <div class="container">
-        <h1>关于我</h1>
-        <p>
-          这里写你的个人介绍，比如：
-        </p>
-        <ul>
-          <li>你是谁 / 做什么工作或在读什么专业</li>
-          <li>你对哪些技术、方向感兴趣</li>
-          <li>你为什么想写博客、希望通过博客达成什么</li>
-        </ul>
-        <p>
-          你可以自由修改本页面的内容与结构，让它更符合你的风格。
-        </p>
+        <div class="profile-card">
+          <div class="profile-avatar">
+            <img src="assets/images/avatar.jpg" alt="Profile Photo" />
+          </div>
+          <div class="profile-info">
+            <h1>Your Name</h1>
+            <p class="profile-title">Software Engineer / Researcher</p>
+            <p class="profile-bio">
+              A brief introduction about yourself. Describe your interests, 
+              what you're passionate about, and what drives you in your career.
+            </p>
+            <div class="profile-contact">
+              <a href="mailto:your.email@example.com" class="contact-item">
+                <span class="icon">✉</span> your.email@example.com
+              </a>
+              <a href="https://github.com/Liuyunbin-mh" target="_blank" class="contact-item">
+                <span class="icon">⌂</span> github.com/Liuyunbin-mh
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="resume-section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2020 - 2024</div>
+            <div class="timeline-content">
+              <h3>Ph.D. in Computer Science</h3>
+              <p class="institution">University Name, City, Country</p>
+              <p>Research focus: Machine Learning, Natural Language Processing</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2016 - 2020</div>
+            <div class="timeline-content">
+              <h3>B.S. in Computer Science</h3>
+              <p class="institution">University Name, City, Country</p>
+              <p>GPA: 3.9/4.0, Honors: Dean's List</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="resume-section">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2024 - Present</div>
+            <div class="timeline-content">
+              <h3>Software Engineer</h3>
+              <p class="institution">Company Name, City</p>
+              <ul>
+                <li>Developed and maintained scalable backend services</li>
+                <li>Led a team of 3 engineers on a key product feature</li>
+                <li>Improved system performance by 40% through optimization</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022 - 2024</div>
+            <div class="timeline-content">
+              <h3>Research Intern</h3>
+              <p class="institution">Research Lab / Company Name</p>
+              <ul>
+                <li>Conducted research on deep learning models</li>
+                <li>Published 2 papers at top-tier conferences</li>
+                <li>Collaborated with cross-functional teams</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="resume-section">
+      <div class="container">
+        <h2 class="section-title">Publications</h2>
+        <div class="publication-list">
+          <article class="publication-item">
+            <h3>Paper Title: A Novel Approach to Something Important</h3>
+            <p class="pub-authors"><strong>Your Name</strong>, Co-Author One, Co-Author Two</p>
+            <p class="pub-venue">Conference/Journal Name, 2024</p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">PDF</a>
+              <a href="#" class="pub-link">Code</a>
+              <a href="#" class="pub-link">BibTeX</a>
+            </div>
+          </article>
+          <article class="publication-item">
+            <h3>Another Paper Title: Exploring New Methods</h3>
+            <p class="pub-authors"><strong>Your Name</strong>, Co-Author Three</p>
+            <p class="pub-venue">Conference/Journal Name, 2023</p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">PDF</a>
+              <a href="#" class="pub-link">Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="resume-section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Go</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Frameworks & Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Kubernetes</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Databases</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Redis</span>
+              <span class="skill-tag">MySQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Other</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">Agile</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> 我的博客 · 由静态页面驱动</p>
+      <p>© <span id="year"></span> My Blog · Powered by Static Pages</p>
     </div>
   </footer>
 
@@ -47,4 +193,3 @@
   </script>
 </body>
 </html>
-
